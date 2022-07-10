@@ -1,0 +1,447 @@
+/*Index-1*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background: black;
+}
+.wrap{
+	width: 1020px;
+    position: absolute;
+    z-index: 2;
+    top: 9%;
+    transform: translate(-50%, -50%);
+}
+.navbar{
+	display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 2%;
+    width: 90%;
+    padding: 0px 61px;    
+}
+ul li ul{
+	width: 200px;
+    position: absolute;
+    margin: 10px 0px;
+    visibility: hidden;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li{
+	padding: 10px 0px;
+	width: 100%;
+	margin: 5px 0;
+}
+ul{
+	margin-top: 35px;
+}
+ul li{
+	list-style: none;
+	float: left;
+	padding: 10px;
+
+}
+ul li a:hover{
+	background-color: #333;
+	color: #fff;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	transition: 0.3s;
+	font-size: 12px;
+	font-weight: bold;
+	font-size: 12px;
+    padding: 10px;
+    background: #333;
+}
+ul li a:hover{
+	background-color: #333;
+	color: #fff;
+}ul li.active a{
+	background-color: #333;
+	color: #fff;
+}
+.logo img{
+	width: 150px;
+}
+.contents{
+	position: absolute;
+	top: 35%;
+	left: 30%;
+}
+.contents h1{
+	color: #fff;
+	font-size: 70px;
+	text-shadow: -2px 2px 4px #000;
+}
+.color{
+	color: yellow;
+}
+.contents p{
+	color : black;
+	font-size: 20px;
+	text-align: center;
+	margin-right: 400px;
+}
+.button{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 60px;
+	font-weight: bold;
+}
+.slide{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.slideshow {
+  list-style-type: none;
+}
+
+/** SLIDESHOW **/
+.slideshow,
+.slideshow:after { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.slideshow li span { 
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 10s linear infinite 0s; 
+}
+
+.slideshow li:nth-child(1) span { 
+    background-image: url("./img/slide-1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.slideshow li:nth-child(2) span { 
+    background-image: url("./img/slide-2.jpg");
+    animation-delay: 7s; 
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url("./img/slide-3.jpg");
+    animation-delay: 3s;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span {
+	opacity: 1;
+}
+.slideshow li{
+	padding: 0;
+}
+ul.slideshow{
+	margin: 0px;
+/*Index-1*/
+}
+.content h2{
+	font-size: 2rem;
+	font-weight: 700;
+}
+.content{
+	background: #e0e0e0;
+	height: auto;
+	padding: 50px 50px;
+	color: #821195 !important;
+}
+.footer{
+	height: 15vh;
+	padding: 100px 50px;
+	background:#333;
+	color:#fff;
+}
+.footer p{
+	line-height: 2;
+/*Copyright*/
+}
+.copyright{
+	width:100%;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background: #0c733f;
+}
+
+/*Home*/
+.home h2{
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+    margin-bottom: 30px;
+}
+.home{
+	background: #e0e0e0;
+    height: auto;
+    padding: 100px 50px;
+	color: #821195 !important;
+
+/*Profil Perpustakaan*/
+}
+.profil h2{
+	text-align: center;
+	margin-bottom: 30px;
+
+/*Visi dan Misi-3*/
+}
+.visimisi h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.visimisi-p{
+	background: white;
+	color: #333;
+	padding: 20px;
+	border:1px solid #ccc;
+	line-height: 2;
+}	
+.visimisi-p li{
+	margin-left: 16px;
+
+}
+.profilp p,.profilp li{
+	line-height: 2;
+}
+.profilp li{
+	margin-left: 18px;
+
+/*Struktur Organisasi-4*/
+}
+.strukturp{
+	background: white;
+	color: #333;
+	border:1px solid #ccc;
+	display: flex;
+    justify-content: center;
+}
+.struktur{
+	height: 100vh;
+}
+.struktur h2{
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+.profilp{
+	background: white;
+	color: #333;
+	padding: 20px;
+	border:1px solid #ccc;
+
+/*Kartu Perpustakaan*/
+}
+.kartu h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.kartup{
+	background: white;
+	color: #333;
+	padding: 20px;
+	border:1px solid #ccc;
+}
+.kartup h3{
+	margin-bottom: 5px;
+}
+.kartup li{
+	margin-left: 15px;
+	line-height: 1.5;
+
+/*Tata Tertib-5*/
+}
+.tata-tertib{
+	height: 140vh;
+}
+.tata-tertib h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.tata-p{
+	background: white;
+	color: #333;
+	padding: 20px;
+	border:1px solid #ccc;
+}
+.tata-p p{
+	margin-bottom: 7px;
+	margin-top: 7px;
+}
+.tata-p li{
+	line-height: 1.5;
+	margin-left: 15px;
+}
+/*Kartu Perpustakaan-6*/
+}
+.content h2{
+	text-align: center;
+	margin-bottom: 30px;
+
+/*Jam Buka-7*/
+}
+.jambuka{
+	height: 50vh;
+}
+.jambuka h2{
+	text-align: center;
+	margin-bottom: 30px;  
+}
+table{
+	width: 700px;
+}
+.jambukap p{
+	margin-left: 5px;
+}
+.jambukap{
+	background: white;
+	color: #333;
+	padding: 20px;
+	border:1px solid #ccc;
+}
+table td{
+	border: 1px solid #ccc;
+	padding: 5px;
+
+/*Fasilitas*/
+}
+.fasilitas h2{
+	text-align: center;
+	margin-bottom: 30px;  
+}
+.fasilitasp{
+	background: white;
+	color: #333;
+	padding: 20px;
+	border:1px solid #ccc;
+
+/*Kontak-10*/
+}
+.kontak h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+button{
+	padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    background: #e41f1f;
+}
+button a,.kontak-hitam a{
+	text-decoration: none;
+	color: white;
+}
+.kontak-hitam a:hover{
+	color:lightgreen;
+}
+.kontak{
+	height: 99vh;
+}
+.kontak-hitam{
+	background: black;
+	color: white;
+	padding: 20px;
+}
+.kontak-hitam p{
+	margin-top: 10px;
+
+/*Galeri*/
+}
+.galeri h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.gambar{
+	background: white;
+    color: #333;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 70vh;
+}
+.gambar img{
+	width: 31%;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+.galeri{
+	height: auto;
+}
+
+/* Responsive Tablet */
+@media (max-width:768px) {
+	.wrap{width: 100%;}
+	header{width: 100%;}
+	.navbar{margin:0;padding:0;}
+	.copyright{padding: 10px 0px;}
+	.slide,.slideshow li span{height: 70vh !important}
+	.logo{margin-left: 75px;margin-top: -19px;}
+	.tata-tertib,.jambuka,.gambar,.kontak{height: auto;}
+	.strukturp img{width: 100% !important;margin:0!important;}
+	table{width: 100%;}
+	.gambar img{float:none;width: 29%;height: auto;}
+}
+/* Responsive Smartphone */
+@media (max-width:425px) {
+	.logo{margin:0;}
+	.navbar{width: 100%;display: block;}
+	.navbar ul li{ padding:2px;}
+	ul {margin: 1px 0px 0px 12px;}
+	ul li ul li{    margin: 9px 0px;}
+	.slide,.slideshow li span{height: 35vh !important}
+	.footer{height: auto;}
+	.content{padding: 10px 0px;}
+	.content h2{padding-top: 50px;}
+	.profilp img,.fasilitasp img{width: 100% !important;height: auto;margin:0!important;}
+	.gambar img {width: 90%;padding: 10px;float: none;}
+	.gambar{height: auto;}
+}
+@media (max-width:375px) {
+	ul li a{font-size: 10px !important;}
+	.copyright{font-size: 12px;}
+}
+@media (max-width:320px) {
+	ul li a{font-size: 6px !important;}
+	.copyright{font-size: 12px;}
+}
